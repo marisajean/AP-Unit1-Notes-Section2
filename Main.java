@@ -1,3 +1,4 @@
+import java.util.Scanner;
 /*
 
 Primitive Type - storing simple information/data (ex. int x = 5;)
@@ -38,25 +39,51 @@ public class Main {
       double myDreamGrade = 100.0;
 
       // we can format strings using concatenation (+)
-      System.out.println("My current grade is: " + myGradeAverage);
+     // System.out.println("My current grade is: " + myGradeAverage);
       // print statement for ideal grade 
-      System.out.println("My dream grade is " + myDreamGrade + "!");
+     // System.out.println("My dream grade is " + myDreamGrade + "!");
 
       // printing a quote using an escape sequence 
       // escape sequences always use a \
       // \n gives a new line 
       // we use \\ to actually print one \
-      System.out.println("My teacher \\always says,\n\"Study for your test!\"");
+    //  System.out.println("My teacher \\always says,\n\"Study for your test!\"");
 
       // arithmetic operations (+ - * /)
       // working with only ints, output will be an int 
       // int / int does TRUNCATING DIVISION removes the decimal, does not round
-      System.out.println(19/10);
+     // System.out.println(19/10);
       // if we want to divide and get a decimal, we need to divide with a double
-      System.out.println(19/10.5);
-      System.out.println(10 + 12.0);
+      //System.out.println(19/10.5);
+     // System.out.println(10 + 12.0);
       // % gives us the remainder
-      System.out.println(12%10);
+      //System.out.println(12%10);
 
+      int myNum = 7;
+      int newNum = myNum;
+      newNum = 8;
+
+     // System.out.println(myNum);
+     // System.out.println(newNum);
+
+      // incrementing variable 
+      myNum = myNum + 1;
+      myNum = myNum + 1;
+
+      // handles the assignment and the addition all at once 
+      myNum++;
+
+      // decrementing 
+      myNum = myNum - 1;
+      myNum--;
+
+     // System.out.println(myNum);
+    //  System.out.println(newNum);
+
+
+    // working with Scanner class and text input 
+    System.out.println("Greetings human! What is your name?");
+    Scanner scan = new Scanner(System.in);
+    String name = scan.nextLine();
    }
 }
