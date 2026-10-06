@@ -81,9 +81,59 @@ public class Main {
     //  System.out.println(newNum);
 
 
-    // working with Scanner class and text input 
-    System.out.println("Greetings human! What is your name?");
-    Scanner scan = new Scanner(System.in);
-    String name = scan.nextLine();
+      // working with Scanner class and text input 
+     // System.out.println("Greetings human! What is your name?");
+     // Scanner scan = new Scanner(System.in);
+     // String name = scan.nextLine();
+      
+
+      /* lesson 1.5 Notes - Casting 
+      Casting allows us to change from one data type to another 
+
+      We cast using a "cast operator" written in () before our expression 
+      */
+      double doubleNum = 5.0;
+      System.out.println((int) doubleNum / 2);
+
+      // cast from a double to an int, it will truncate our double 
+      // casting from an int to a double will just add .0 to the end 
+      System.out.println((int) 4.3);
+      System.out.println((double) 8);
+
+      double number;    // positive value from somewhere
+      double negNumber; // negative value from somewhere
+
+      number = 4.9;
+      negNumber = -3.6;
+      int nearestInt = (int)(number + 0.5);
+      int nearestNegInt = (int)(negNumber - 0.5);
+
+      System.out.println(nearestInt);
+      System.out.println(nearestNegInt);
+
+      // Coding Challenge Average 3 Numbers 
+      int grade1 = 85;
+      int grade2 = 96;
+      int grade3 = 92;
+
+      int sum;
+      double average;
+      sum = grade1 + grade2 + grade3;
+      average = ((double) sum) / 3;
+      System.out.println(average);
+
+      // Lesson 1.6 Compound Assignment Operators 
+      // compound assignment operators always have the math symbol first, and then the equal sign 
+      average = average + 1;
+      average += 1;
+      average++;
+      System.out.println(average);
+
+      // we can do compound operators with any number, not just 1. 
+      average -= 2;
+      // our most condensed version only increments or decrements by 1. 
+      average--;
+      System.out.println(average);
+      
    }
 }
